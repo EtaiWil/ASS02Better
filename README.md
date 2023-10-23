@@ -1,14 +1,12 @@
 # Grading System
 ## General Information
-The program is an automated checking system of code program outputs made in c. The program contain two parts
-part 1: checking the relation between two files.
-part 2: checking the relation between output of c program to the desire output. 
+The program is an automated checking system of code program outputs made in c.<br>
+The program contains two parts part 1: checking the relation between two files.Part 2: checking the relation between the output of the C program to the desired output. 
 ### part A (ex21)
-This program accepts paths to two files as arguments to main, and checks whether the two files
-identical/similar/different.
+This program accepts paths to two files as arguments to the main and checks whether the two files are identical/similar/different.
 ### definitions
 ##### Identical- two files are identical if all characters in them are equal.
-##### Similar-Similar files are files that are not identical, but contain the same text, and there is a difference in usage In lower or uppercase letters, space and/or line breaks.
+##### Similar-Similar files are files that are not identical but contain the same text, and there is a difference in usage In lower or uppercase letters, space, and/or line breaks.
 ##### Different-different files are files that are not identical or similar.
 
 For example: all the next files are similar:
@@ -35,8 +33,8 @@ ab2
 ```
 https://github.com/EtaiWil/ASS02Better.git
 ```
-2. Rneter to Linux terminal and enter to following command: ``` gcc ex21.c -o comp.out  ``` 
-3. Rnter the 2 files that you want to check with their absolute  path ``` ./comp.out <path A> <path B>  ```  for example ```./comp.out /home/os2021/code/1.txt /home/os2021/code/2.txt```
+2. Enter to Linux terminal and enter the following command: ``` gcc ex21.c -o comp.out  ``` 
+3. Enter the 2 files that you want to check with their absolute  path ``` ./comp.out <path A> <path B>  ```  for example ```./comp.out /home/os2021/code/1.txt /home/os2021/code/2.txt```
 3. Write ```echo $?```
 
 * If the output is 1 -**the files are identical**
@@ -44,19 +42,13 @@ https://github.com/EtaiWil/ASS02Better.git
 * If the output is 3 -**the files are similar**
 
 ### Part B (ex22)
-This program accepts  a path to a configuration file as an argument to the main.
-The configuration file contains 3 lines:
-Line 1: path to the folder containing subfolders. On the first level (one inside), each folder
-represents a user, and should contain a c file.
-Line 2: Path to the file containing input.
+This program accepts a path to a configuration file as an argument to the main. The configuration file contains 3 lines: <br>
+Line 1: path to the folder containing subfolders. On the first level (one inside), each folder represents a user and should contain a c file.<br>
+Line 2: Path to the file containing input.<br>
 Line 3: Path to the file containing the correct output for the input file from line 2
-<br>
-The  program enter into all subfolders and ignore other non-folder files if any inside the folder from row 1.
-Search in each of its subfolders and not at deeper levels for a c file and compile it.
- Then, the resulting executable file  run with the input that appears in the file in the location in row 2.Afterwards,
-The output of the program  compared with the desired output file, whose location comes from line 3.
-At the end, the program create a file (in the folder from which your program was run) named results.csv
-which contains for each username (the name of the subfolder) its score (between 0 and 100) and the reason for the grade.
+The program enters into all subfolders and ignores other non-folder files if any inside the folder from row 1.Search in each of its subfolders and not at deeper levels for a c file and compile it. Then, the resulting executable file runs with the input that appears in the file in the location in row 2.<br>
+Afterward, The output of the program is compared with the desired output file, whose location comes from line 3.<br>
+In the end, the program creates a file (in the folder from which your program was run) named results.csv which contains each username (the name of the subfolder) its score (between 0 and 100), and the reason for the grade.
 <br>
 * NO_C_FILE : if in the directory there isn't a file that end with .c **grade 0** 
 * COMPILATION_ERROR: if the file can't compile **grade 10**
@@ -98,9 +90,9 @@ Please enter two numbers
 ```
 https://github.com/EtaiWil/ASS02Better.git
 ```
-2. eneter to Linux terminal and enter to following command: ``` gcc ex22.c   ```
-3. enter the configuration file that you want to check with absolute  path ``` ./a.out <path A>   ```  for example ```./a.out /home/os2021/conf.txt```
-4. see the results in results.csv
+2.Enter to Linux terminal and enter to the following command:``` gcc ex22.c   ``` <br>
+3.Enter the configuration file that you want to check with absolute  path ``` ./a.out <path A>   ```  for example ```./a.out /home/os2021/conf.txt```
+4.See the results in results.csv
 
 ## Built with
 
